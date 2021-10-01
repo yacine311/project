@@ -1,5 +1,7 @@
-package com.gestion.gestionCo.Client;
+package com.gestion.gestionCo.controller;
 
+import com.gestion.gestionCo.domain.PersonneMoral;
+import com.gestion.gestionCo.service.ClientsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +21,7 @@ public class ClientController {
     }
 
     @GetMapping
-    public List<Clients> getClients(){
+    public List<PersonneMoral> getClients(){
        return clientService.getClients();
 
     }

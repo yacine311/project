@@ -1,20 +1,20 @@
-package com.gestion.gestionCo.Client;
+package com.gestion.gestionCo.domain;
 
-public class Clients {
+public class PersonneMoral {
    private Long id;
    private String nom;
    private String prenom;
    private String email;
    private String adresse;
 
-    public Clients() {
+    public PersonneMoral() {
     }
 
-    public Clients(Long id,
-                   String nom,
-                   String prenom,
-                   String email,
-                   String adresse) {
+    public PersonneMoral(Long id,
+                         String nom,
+                         String prenom,
+                         String email,
+                         String adresse) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -22,10 +22,10 @@ public class Clients {
         this.adresse = adresse;
     }
 
-    public Clients(String nom,
-                   String prenom,
-                   String email,
-                   String adresse) {
+    public PersonneMoral(String nom,
+                         String prenom,
+                         String email,
+                         String adresse) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
