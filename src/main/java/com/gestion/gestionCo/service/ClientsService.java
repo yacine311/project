@@ -1,5 +1,6 @@
-package com.gestion.gestionCo.Client;
+package com.gestion.gestionCo.service;
 
+import com.gestion.gestionCo.domain.PersonnePhysique;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -8,9 +9,9 @@ import java.util.List;
 @Service
 public class ClientsService {
 
-    public List<Clients> getClients(){
+    public List<PersonnePhysique> getClients(){
         return Arrays.asList(
-                new Clients(
+                new PersonnePhysique(
                         1L,
                         "Mohamed",
                         "HOUBI",

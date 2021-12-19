@@ -1,20 +1,23 @@
-package com.gestion.gestionCo.Client;
+package com.gestion.gestionCo.domain;
 
-public class Clients {
+import lombok.Data;
+
+@Data
+public class PersonnePhysique {
    private Long id;
    private String nom;
    private String prenom;
    private String email;
    private String adresse;
 
-    public Clients() {
+    public PersonnePhysique() {
     }
 
-    public Clients(Long id,
-                   String nom,
-                   String prenom,
-                   String email,
-                   String adresse) {
+    public PersonnePhysique(Long id,
+                            String nom,
+                            String prenom,
+                            String email,
+                            String adresse) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -22,10 +25,10 @@ public class Clients {
         this.adresse = adresse;
     }
 
-    public Clients(String nom,
-                   String prenom,
-                   String email,
-                   String adresse) {
+    public PersonnePhysique(String nom,
+                            String prenom,
+                            String email,
+                            String adresse) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
