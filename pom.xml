@@ -14,7 +14,7 @@
 	<name>gestionCo</name>
 	<description>Gestion Commerciale Spring Boot</description>
 	<properties>
-		<java.version>08</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

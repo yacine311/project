@@ -1,20 +1,23 @@
 package com.gestion.gestionCo.domain;
 
-public class PersonneMoral {
+import lombok.Data;
+
+@Data
+public class PersonnePhysique {
    private Long id;
    private String nom;
    private String prenom;
    private String email;
    private String adresse;
 
-    public PersonneMoral() {
+    public PersonnePhysique() {
     }
 
-    public PersonneMoral(Long id,
-                         String nom,
-                         String prenom,
-                         String email,
-                         String adresse) {
+    public PersonnePhysique(Long id,
+                            String nom,
+                            String prenom,
+                            String email,
+                            String adresse) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -22,10 +25,10 @@ public class PersonneMoral {
         this.adresse = adresse;
     }
 
-    public PersonneMoral(String nom,
-                         String prenom,
-                         String email,
-                         String adresse) {
+    public PersonnePhysique(String nom,
+                            String prenom,
+                            String email,
+                            String adresse) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
